@@ -23,14 +23,14 @@
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
                         "aot": true,
-                        "optimization": true,
+                        "optimization": false,
                         "outputHashing": "all",
                         "sourceMap": true,
                         "extractCss": true,
                         "namedChunks": false,
                         "extractLicenses": true,
                         "vendorChunk": false,
-                        "buildOptimizer": true,
+                        "buildOptimizer": false,
                         "budgets": [
                             {
                                 "type": "initial",
@@ -59,7 +59,8 @@
                                     "replace": "src/environments/environment.ts",
                                     "with": "src/environments/environment.dev.ts"
                                 }
-                            ]
+                            ],
+                            "sourceMap": true
                         },
                         "prod": {
                             "fileReplacements": [
@@ -68,7 +69,9 @@
                                     "with": "src/environments/environment.prod.ts"
                                 }
                             ],
-                            "sourceMap": false
+                            "sourceMap": false,
+                            "buildOptimizer": true,
+                            "optimization": true
                         }
                     }
                 },

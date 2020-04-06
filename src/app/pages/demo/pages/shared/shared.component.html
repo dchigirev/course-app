@@ -23,6 +23,11 @@
         <app-checkboxes formControlName="checkboxes" [items]="items"></app-checkboxes>
     </app-form-field>
 
+    <app-form-field label="Radios" [required]="true" [control]="form.controls.radios" [isInline]="isInline">
+        <app-radios formControlName="radios" [items]="items">
+        </app-radios>
+    </app-form-field>
+
 </form>
 
 <code>

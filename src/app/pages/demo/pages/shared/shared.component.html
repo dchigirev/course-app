@@ -10,6 +10,15 @@
         [patternError]="regexErrors.numbers">
         <app-input formControlName="input"></app-input>
     </app-form-field>
+
+    <app-form-field label="Password" [required]="true" [control]="form.controls.password" [isInline]="isInline">
+        <app-password formControlName="password"></app-password>
+    </app-form-field>
+
+    <app-form-field label="Select" [required]="true" [control]="form.controls.select" [isInline]="isInline">
+        <app-select formControlName="select" [items]="items"></app-select>
+    </app-form-field>
+
 </form>
 
 <code>

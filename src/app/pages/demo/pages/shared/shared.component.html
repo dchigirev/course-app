@@ -1,3 +1,9 @@
+<h2>Files uploading</h2>
+
+<app-button appFilesUpload [multiple]="true" (changed)="onFilesChanged($event)">Upload Multiple</app-button>
+
+<app-button appFilesUpload [crop]="true">Upload One</app-button>
+
 <h2>Actions</h2>
 
 <app-button (click)="onToggleSpinner()">Toggle Spinner</app-button>

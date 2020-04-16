@@ -21,6 +21,7 @@ import { EmployeeComponent } from './components/professional/roles/employee/empl
 import { RecruiterComponent } from './components/professional/roles/recruiter/recruiter.component';
 import { ExperiencesComponent } from './components/professional/roles/employee/experiences/experiences.component';
 
+import { MapperService } from './services/mapper/mapper.service';
 
 @NgModule({
     declarations: [FormComponent, PersonalComponent, ProfessionalComponent, EmployeeComponent, RecruiterComponent, ExperiencesComponent],
@@ -40,6 +41,9 @@ import { ExperiencesComponent } from './components/professional/roles/employee/e
         UserPhotoModule,
         ButtonModule,
         StepperModule
+    ],
+    providers: [
+        MapperService
     ]
 })
 export class FormModule { }

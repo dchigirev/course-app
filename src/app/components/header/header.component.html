@@ -9,7 +9,7 @@
         </div>
 
         <div *ngIf="isAuthorized">
-            <a class="app-a" routerLink="profile/new">Profile</a>
+            <a class="app-a" (click)="onProfileNavigate()">Profile</a>
             <a class="app-a" (click)="onSignOut()">Sign Out</a>
         </div>
 

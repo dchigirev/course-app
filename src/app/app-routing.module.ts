@@ -23,6 +23,10 @@ const routes: Routes = [
                 loadChildren: () => import('./pages/profile/profile.module').then(m => m.ProfileModule)
             },
             {
+                path: 'employees',
+                loadChildren: () => import('./pages/employees/employees.module').then(m => m.EmployeesModule),
+            },
+            {
                 path: '',
                 pathMatch: 'full',
                 redirectTo: 'static/welcome'

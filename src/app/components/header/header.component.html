@@ -9,6 +9,7 @@
         </div>
 
         <div *ngIf="isAuthorized">
+            <a class="app-a" routerLink="jobs">Jobs</a>
             <a class="app-a" routerLink="employees">Employees</a>
             <a class="app-a" (click)="onProfileNavigate()">Profile</a>
             <a class="app-a" (click)="onSignOut()">Sign Out</a>

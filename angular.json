@@ -60,7 +60,19 @@
                                     "with": "src/environments/environment.dev.ts"
                                 }
                             ],
-                            "sourceMap": true
+                            "sourceMap": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "8mb"
+                                },
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb",
+                                    "maximumError": "10kb"
+                                }
+                            ]
                         },
                         "prod": {
                             "fileReplacements": [

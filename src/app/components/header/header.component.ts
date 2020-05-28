@@ -1,4 +1,7 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
+import {
+    Component, OnInit, ChangeDetectionStrategy,
+    Input, Output, EventEmitter
+} from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '@app/store/user';
 @Component({
